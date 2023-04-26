@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Noto Serif TC', serif;
+}
+
+header{
+    background-color: #c4c4c4;
+    width: 100%;
+    padding: 1rem;
+}
+header i{
+    font-size: 3.5rem;
+    color: rgba(0,125,50,0.4);
+}
+ nav{
+    background-color: black;
+ }
+ nav ul{
+    display:flex;
+    padding-left: 1rem;
+    justify-content: center;
+    list-style-type:none;
+ }
+ nav ul li{
+    padding: 0.5rem 0.75rem;
+ }
+ nav ul li a{
+    text-decoration:none;
+    color: #c4c4c4;
+    font-size:1.25rem;
+    transition: all 0.3s;
+ }
+ nav ul li a i{
+    font-size: 2rem;
+ }
+ /* 目前頁面的顯色 */
+ nav ul li:nth-child(1) a{
+    color:antiquewhite;
+    font-weight: bolder;
+ }
+ /* icon顏色 */
+ nav ul li:nth-child(1) a i{
+    color:#CDA581 ;
+ }
+ nav ul li:nth-child(2) a i{
+    color:rgba(252, 71, 0, 0.493) ;
+ }
+ nav ul li:nth-child(3) a i{
+    color:rgba(255, 2, 2, 1) ;
+ }
+ nav ul li:nth-child(4) a i{
+    color:rgba(255, 255, 255, 1) ;
+ }
+ nav ul li:nth-child(5) a i{
+    color:rgba(137, 135, 236, 1) ;
+ }
+ /* 觸碰文字轉換顏色 */
+ nav ul li a:hover{
+    color:lightskyblue;
+    font-weight: bolder;
+ }
+
+ content{
+    display:flex;
+ }
+ content section.left{
+    padding: 2rem;
+ }
+ content section.right{
+    padding: 2rem;
+ }
+ content section.rigth h5{
+    font-size: 1.5rem;
+    text-align: center;
+ }
+ content section.right iframe{
+    border-radius:5%;
+    border: 1px solid black;
+ }

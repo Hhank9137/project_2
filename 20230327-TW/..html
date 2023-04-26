@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="此網站展示台灣過去五十至七十年的經濟發展歷史，以及促成其發展的相關政策。">
+    <link rel="stylesheet" href="./twicon/twicon.css">
+    <title>工業改革｜台灣經濟發展歷史</title>
+    <link rel="shortcut icon" href="./image/taiwanIcon.png">
+    <link rel="bookmark" href="./image/taiwanIcon.png">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        header {
+            background-color: #c4c4c4;
+            width: 100%;
+            padding: 1rem;
+        }
+
+        header i {
+            font-size: 3.5rem;
+            color: rgba(0, 125, 50, 0.4);
+        }
+
+        nav {
+            background-color: black;
+        }
+
+        nav ul {
+            display: flex;
+            padding-left: 1rem;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            padding: 0.5rem 0.75rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #c4c4c4;
+            font-size: 1.25rem;
+            transition: all 0.3s;
+        }
+
+        nav ul li a i {
+            font-size: 2rem;
+        }
+
+        /* 目前頁面的顯色 */
+        nav ul li:nth-child(3) a {
+            color: antiquewhite;
+            font-weight: bolder;
+        }
+
+        /* icon顏色 */
+        nav ul li:nth-child(1) a i {
+            color: #CDA581;
+        }
+
+        nav ul li:nth-child(2) a i {
+            color: rgba(252, 71, 0, 0.493);
+        }
+
+        nav ul li:nth-child(3) a i {
+            color: rgba(255, 2, 2, 1);
+        }
+
+        nav ul li:nth-child(4) a i {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        nav ul li:nth-child(5) a i {
+            color: rgba(137, 135, 236, 1);
+        }
+
+        /* 觸碰文字轉換顏色 */
+        nav ul li a:hover {
+            color: lightskyblue;
+            font-weight: bolder;
+        }
+
+        content {
+            display: inline-block;
+            padding: 40px;
+        }
+        content .section1{ 
+            margin-bottom: 30px;
+        }
+        content .section1 img{
+            margin-top: 10px;
+        }
+        
+        content .section2 ul{
+            padding-left: 40px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- 首頁標籤 -->
+    <main>
+        <header>
+            <h1><i class="twicon-main-island"></i> 台灣經濟發展歷史</h1>
+            <p>過去70年台灣發展的歷史以及相關政策</p>
+        </header>
+
+        <!-- 導覽列 -->
+        <nav>
+            <ul>
+                <li><a href="./"><i class="twicon-tapioca"></i>首頁</a></li>
+                <li><a href="./agriculture.html"><i class="twicon-zeelandia"></i>農業改革</a></li>
+                <li><a href="./industralization.html"><i class="twicon-fortune"></i>工業改革</a></li>
+                <li><a href="./economy.html"><i class="twicon-high-speed-rail"></i>經濟起飛</a></li>
+                <li><a href="./author.html"><i class="twicon-slipper"></i>關於作者</a></li>
+            </ul>
+        </nav>
+        <content>
+            <div class="section1">
+                <h3>今日的台灣</h3>
+                <hr>
+                <img src="./image/Group 1.svg" alt="">
+                <p>1980年代後,台灣政府開始實施不同的經濟政策,將產業結構從“重工業”轉變為“技術密集型產業” 技術密集型行業包括光電技術,計算機,計算機集成製造,半導體行 業等。
+                    就像以前的加工區一樣,政府為投資者設立了一個專門的區域來建廠。這個特殊的區域稱為“科學園”。在科技園區內,有許多品牌生產大量半導體產品。 例如,
+                    TSMC,UMC,聯發科等。這些台灣品牌的技術總部都在新竹科學園區內。據《自由時報》網去年報導,2018年科學園的總收入超過850萬億美元。半導體產業對台灣的GDP 貢獻很大。</p>
+            </div>
+            <div class="section2" >
+                <h4>額外資訊:</h4>
+                <ul>
+                    <li><a href="https://scitechvista.nat.gov.tw/Article/c000003/detail?ID=aa4847d1-518f-45e2-be90-3dba4d66c9e9" target="_blank">台灣半導體產業</a></li> 
+                    <li><a href="https://udn.com/news/story/7240/6372464" target="_blank">半導體未來十年</a></li> 
+                </ul>
+            </div>
+        </content>
+    </main>
+</body>
+
+</html>
