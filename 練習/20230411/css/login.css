@@ -1,0 +1,94 @@
+main div.border {
+  min-height: 60vw;
+  min-width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+main div.border div.img_L {
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/pexels-photo-416676.jpeg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+main div.border form.Login {
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  min-height: 30%;
+  min-width: 25%;
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px 2px #747575;
+  padding-bottom: 20px;
+  z-index: 0;
+}
+main div.border form.Login div.welcome {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 5px 0 rgb(32, 178, 170);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: aliceblue;
+  font-size: large;
+  font-weight: 500;
+}
+main div.border form.Login div.id {
+  margin: 0 7px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+main div.border form.Login div.id #userId {
+  width: 100%;
+  height: 2rem;
+}
+main div.border form.Login div.pw {
+  margin: 0 7px;
+  margin-bottom: 30px;
+}
+main div.border form.Login div.pw #userPw {
+  width: 100%;
+  height: 2rem;
+}
+main div.border form.Login div.remember_id {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+main div.border form.Login div.remember_id #remember {
+  width: 13px;
+  height: 30px;
+  margin-right: 1px;
+}
+main div.border form.Login .label {
+  color: lightcoral;
+  font-size: 20px;
+}
+main div.bt {
+  display: flex;
+  justify-content: center;
+}
+main div.bt button:nth-child(1) {
+  margin-right: 5px;
+}
+main div.bt button {
+  font-weight: 200;
+  cursor: pointer;
+  padding: 0 5px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: all 0.5s;
+}
+main div.bt button:hover {
+  font-weight: 600;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  background-color: #afb8e4;
+  box-shadow: 0 0 5px 0px black;
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,36 @@
+main {
+    div.content{
+        div.imageA{
+            position: relative;
+            background-image: url("../images/pexels-photo-416676.jpeg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position:center;
+            z-index: -4;
+        }
+        div.border{
+            width: 100%;
+            height: 100%;
+            display: flex;    
+            justify-content: center;
+            align-items: center;
+            
+            div.about{
+                border: 1px solid black;
+                background-color: rgba($color: #fff, $alpha: 0.62);           
+                div.about_1{
+                    padding: 2px 5px;
+                    label{
+                        padding: 4px 10px;
+                    }
+                    tr td img{
+                        padding-left: 10px;
+                        width:3rem;
+                    }
+                }
+                
+            }       
+        }
+    }
+}

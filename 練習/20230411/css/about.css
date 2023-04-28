@@ -1,0 +1,32 @@
+main div.content div.imageA {
+  position: relative;
+  background-image: url("../images/pexels-photo-416676.jpeg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -4;
+}
+main div.content div.border {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main div.content div.border div.about {
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.62);
+}
+main div.content div.border div.about div.about_1 {
+  padding: 4px 10px;
+  cursor: pointer;
+}
+main div.content div.border div.about div.about_1 label img {
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+main div.content div.border div.about div.about_1 dl dd {
+  margin-left: 35px;
+}/*# sourceMappingURL=about.css.map */

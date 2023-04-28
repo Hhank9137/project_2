@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mycss.css">
+    <!-- bootstarp icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+       
+    </style>
+    <title>BS-Accordion 練習</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- 1 Accordion -->
+            <div class="demo">
+                <h2>1. Accordion</h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <!-- data-bs-target對應到下面的id -->
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#one" aria-expanded="false" aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <!-- data-bs-target對應到下面的id -->
+                        <div id="one" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 Alert -->
+            <div class="demo">
+                <h2>2. Alert <i class="bi bi-1-circle"></i></h2>
+                <div class="alert alert-dark">
+                    1. A simple primary alert—check it out!
+                </div>
+                <div class="alert alert-secondary">
+                    2. A simple primary alert—check it out!
+                </div>
+                <div class="alert alert-info">
+                    3. A simple primary alert—check it out!
+                </div>
+                <div class="alert alert-danger">
+                    4. A simple primary alert—check it out!
+                </div>
+                <div class="alert alert-success">
+                    5. A simple primary alert—check it out!
+                </div>
+                <div class="alert alert-light">
+                    6. A simple primary alert—check it out!
+                </div>
+                <div class="alert alert-primary">
+                    7. A simple primary alert—check it out!
+                </div>
+                <div class="alert alert-warning">
+                    8. A simple primary alert—check it out!
+                </div>
+
+                <div id="liveAlertPlaceholder"></div>
+                <button type="button" class="btn btn-primary" id="liveAlertBtn">Click to Show live alert</button>
+                <script>
+                    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+                    const alert = (message, type) => {
+                        const wrapper = document.createElement('div')
+                        wrapper.innerHTML = [
+                            `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                            `   <div>${message}</div>`,
+                            '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                            '</div>'
+                        ].join('')
+
+                        alertPlaceholder.append(wrapper)
+                    }
+
+                    const alertTrigger = document.getElementById('liveAlertBtn')
+                    if (alertTrigger) {
+                        alertTrigger.addEventListener('click', () => {
+                            alert('Weclome to this Pages', 'success')
+                        })
+                    }
+                </script>
+            </div>
+            <!-- 3 Badge -->
+            <div class="demo">
+                <h2>3. Badge</h2>
+                <button type="button" class="btn btn-primary">
+                    購物車 <span class="badge text-bg-secondary">5</span>
+                </button>
+                <button type="button" class="btn btn-success position-relative">
+                    訊息 <span class="badge text-bg-warning position-absolute top-0 start-100 translate-middle">9</span>
+                </button>
+                <br>
+                <button type="button" class="btn btn-info rounded-pull mt-3">歡迎光臨
+                    <span class="badge rounded-circle"></span>
+                </button>
+
+            </div>
+            <!-- 4 Breadcrumb -->
+            <div class="demo">
+                <h2>4. Breadcrumb <i class="bi bi-arrow-return-right"></i> </h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <!-- active：目前的位置，無法點選 -->
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </nav>
+                <nav style="--bs-breadcrumb-divider:'.';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- 5 Button -->
+            <div class="demo">
+                <h2>5. Button</h2>
+                <button class="btn btn-primary">primary</button>
+                <button class="btn btn-secondary">secondary</button>
+                <button class="btn btn-warning">warning</button>
+                <hr>
+                <a href="#" class="btn btn-primary">primary</a>                
+                <input type="button" class="btn btn-primary" value="input-button-primary">
+                <input type="button" class="btn btn-secondary" value="submit-button-secondary">
+                <input type="button" class="btn btn-warning " value="reset-button-warning">
+                <hr>
+                <h4>註解：</h4>
+                <button class="btn btn-outline-primary">primary</button>
+                <button class="btn btn-outline-secondary">secondary</button>
+                <button class="btn btn-outline-warning">warning</button>
+                <hr>
+                <h4>註解：</h4>
+                <input type="button" class=" btn btn-lg btn-info" value="btn-sm">
+                <input type="button" class="btn btn-md btn-info" value="btn-md">
+                <input type="button" class="btn btn-sm btn-info" value="btn-sm">
+                <input type="button" class="btn btn-sm btn-danger" value="售完" disabled>
+                <hr>
+                <h4>註解: grid</h4>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-primary"> button</button>
+                    <button class="btn btn-outline-danger">Error!</button>
+                </div>
+                <hr>
+                <h4>註解: responsive</h4>
+                <!-- 在lg-view button會形成block -->
+                <div class="d-grid gap-2 d-lg-block">
+                    <button class="btn btn-outline-primary"> button</button>
+                    <button class="btn btn-outline-danger">Error!</button>
+                </div>
+                <hr>
+                <h4>註解: mx-auto</h4>
+                <div class="d-grid gap-2 col-5 mx-auto">
+                    <button class="btn btn-outline-primary"> button</button>
+                    <button class="btn btn-outline-danger">Error!</button>
+                </div>
+                <hr>
+                <h4>註解: d-flex justify-content-md-end</h4>
+                <div class="d-grid gap-2 d-flex justify-content-lg-end justify-content-md-center">
+                    <button class="btn btn-outline-primary"> button</button>
+                    <button class="btn btn-outline-danger">Error!</button>
+                </div>
+            </div>
+            <!-- 6 card -->
+            <div class="demo">
+                <h2>6. card</h2>
+                    <div class="card col-6 ">
+                        <img src="./img/p002.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="card-title">Picture.1</div>
+                            <div class="card-text">塑膠抓住專用最低睡覺報紙，屏幕新增關心。</div>
+                            <div class="d-grid d-flex justify-content-center"><a href="#" class="btn btn-outline-primary ">了解更多</a></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card col-6">
+                        <img src="./img/free00.jpg" class="card-img-top
+                        " alt="">
+                        <div class="card-header d-flex justify-content-center">Free</div>
+                        <!-- card-body -->
+                        <div class="card-body">
+                            <!-- card-title -->
+                            <div class="card-title"></div>
+                            <!-- card-text -->
+                            <div class="card-text">
+                                <h5>霓虹燈費用：200 $</h5>
+                                <h6>使用軟體:
+                                    <!-- span baged效果 -->
+                                    <span class="badge text-bg-info">Photoshop</span>
+                                </h6>
+                                <!-- list-group -->
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item">1. bla</li>
+                                      <li class="list-group-item">2. blabla </li>
+                                      <li class="list-group-item">3. blablabla</li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <!-- card-footer -->
+                        <div class="card-footer d-flex justify-content-center">Dom</div>
+                    </div>
+                    <hr>
+
+                    <h4>註解：Navigation</h4>
+                    <div class="card text-center">
+                        <div class="card-header">
+                          <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item " id="nav01">
+                              <a class="nav-link" aria-current="true" >焦點</a>
+                            </li>
+                            <li class="nav-item" id="nav02">
+                              <a class="nav-link">娛樂</a>
+                            </li>
+                            <li class="nav-item" id="nav03">
+                              <a class="nav-link">運動</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        
+                        <div class="card-body" id="text-ngation">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text" >With supporting text below as a natural lead-in to additional content.</p>
+                          <a class="btn btn-primary">Go</a>
+                        </div>
+                      </div>
+            </div>
+            <!-- 7.  -->
+            <div class="demo">
+                <h2> </h2>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script>
+        $(function(){
+            $("#nav01").hover(function(){
+                console.log(this);
+                $("#nav01 a").addClass("active");
+                $("#nav02 a").removeClass("active");
+                $("#nav03 a").removeClass("active");
+                var strHTML = '<div class="card-body" id="text-ngation"><div class="row"><div class="col-md-7"><img src="./img/cat1.avif" class="img-fluid" alt=""><div class="row mt-3"><div class="col-md-6"><img src="./img/cat2.avif" class="img-fluid pe-0" alt=""></div><div class="col-md-6"><img src="./img/cat3.avif" class="img-fluid  ps-0" alt=""></div></div></div><div class="col-md-5"><h6 class="text-truncate"><a href="">郵件主要隨意客服為您打擊退出日報，媒體床上適用於軟體實業晶片版本是從是由，怎麼和諧還在全國設計加速台南苗栗影視頻道下列精神簡體記錄制度，優質特別是周邊上一頁不敢場所一副注重成為領導很難文字放棄提問，程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只。</a></h6><p class="text-truncate">優質特別是周邊上一頁不敢場所一副注重成為領導很難文字放棄提問，程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只郵件主要隨意客服為您打擊退出日報，媒體床上適用於軟體實業晶片版本是從是由。</p><hr><h6 class="text-truncate"><a href="">質特別是周邊上一頁不敢場所一副注重成為領導很難文字放棄提問，程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只。</a></h6><p class="text-truncate">優質特別是周邊上一頁不敢場所一副注重成為領導很難文字放棄提問，程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只郵件主要隨意客服為您打擊退出日報，媒體床上適用於軟體實業晶片版本是從是由。</p><hr><h6 class="text-truncate"><a href="">適用於軟體實業晶片版本是從是由，怎麼和諧還在全國設計加速台南苗栗影視頻道下列精神簡體記錄制度，優質特別是周邊上一頁不敢場所一副注重成為領導很難文字放棄提問，程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只。</a></h6><p class="text-truncate">嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只郵件主要隨意客服為您打擊退出日報，媒體床上適用於軟體實業晶片版本是從是由。</p><hr><h6 class="text-truncate"><a href="">程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只。</a></h6><p class="text-truncate">媒體床上適用於軟體實業晶片版本是從是由。</p></div></div></div>'
+
+                $("#text-ngation").html(strHTML);
+            })
+            $("#nav02").hover(function(){
+                console.log(this);
+                $("#nav02 a").addClass("active");
+                $("#nav01 a").removeClass("active");
+                $("#nav03 a").removeClass("active");
+                var strHTML = '<div class="card-body" id="text-ngation"><div class="row"><div class="col-md-7"><img src="./img/cat4.avif" class="img-fluid" alt=""><div class="row mt-3"><div class="col-md-6"><img src="./img/cat3.avif" class="img-fluid pe-0" alt=""></div><div class="col-md-6"><img src="./img/cat2.avif" class="img-fluid  ps-0" alt=""></div></div></div><div class="col-md-5"><h6 class="text-truncate"><a href="">件主要隨意客服為您打擊退出日報，媒體床上適用於軟體實業晶片版本是從是由，怎麼和諧還在全國設計加速台南苗栗影視頻道下列精神簡體記錄制度，優質特別是周邊上一頁不敢場所一副注重成為領導很難文字放棄提問，程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只。</a></h6><p class="text-truncate">質特別是周邊上一頁不敢場所一副注重成為領導很難文字放棄提問，程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只郵件主要隨意客服為您打擊退出日報，媒體床上適用於軟體實業晶片版本是從是由。</p><hr><h6 class="text-truncate"><a href="">別是周邊上一頁不敢場所一副注重成為領導很難文字放棄提問，程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只。</a></h6><p class="text-truncate">優質特別是周邊上一頁不敢場所一副注重成為領導很難文字放棄提問，程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只郵件主要隨意客服為您打擊退出日報，媒體床上適用於軟體實業晶片版本是從是由。</p><hr><h6 class="text-truncate"><a href="">用於軟體實業晶片版本是從是由，怎麼和諧還在全國設計加速台南苗栗影視頻道下列精神簡體記錄制度，優質特別是周邊上一頁不敢場所一副注重成為領導很難文字放棄提問，程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只。</a></h6><p class="text-truncate">嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只郵件主要隨意客服為您打擊退出日報，媒體床上適用於軟體實業晶片版本是從是由。</p><hr><h6 class="text-truncate"><a href="">程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只。</a></h6><p class="text-truncate">媒體床上適用於軟體實業晶片版本是從是由。</p></div></div></div>'
+                $("#text-ngation").html(strHTML);
+            })
+            $("#nav03").hover(function(){
+                console.log(this);
+                $("#nav03 a").addClass("active");
+                $("#nav01 a").removeClass("active");
+                $("#nav02 a").removeClass("active");
+                var strHTML = '<div class="card-body" id="text-ngation"><div class="row"><div class="col-md-7"><img src="./img/cat3.avif" class="img-fluid" alt=""><div class="row mt-3"><div class="col-md-6"><img src="./img/cat4.avif" class="img-fluid pe-0" alt=""></div><div class="col-md-6"><img src="./img/cat1.avif" class="img-fluid  ps-0" alt=""></div></div></div><div class="col-md-5"><h6 class="text-truncate"><a href="">床上適用於軟體實業晶片版本是從是由，怎麼和諧還在全國設計加速台南苗栗影視頻道下列精神簡體記錄制度，優質特別是周邊上一頁不敢場所一副注重成為領導很難文字放棄提問，程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只。</a></h6><p class="text-truncate">上一頁不敢場所一副注重成為領導很難文字放棄提問，程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只郵件主要隨意客服為您打擊退出日報，媒體床上適用於軟體實業晶片版本是從是由。</p><hr><h6 class="text-truncate"><a href="">別是周邊上一頁不敢場所一副注重成為領導很難文字放棄提問，程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只。</a></h6><p class="text-truncate">主人完整也許目錄檢驗人士範圍最佳而來我只郵件主要隨意客服為您打擊退出日報，媒體床上適用於軟體實業晶片版本是從是由。</p><hr><h6 class="text-truncate"><a href="">領導很難文字放棄提問，程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只。</a></h6><p class="text-truncate">嘉義打擊主人死了完整也許目錄檢驗人士範圍最佳而來我只郵件主要隨意客服為您退出日報，媒體床上適用於軟體實業晶片版本是從是由。</p><hr><h6 class="text-truncate"><a href="">範圍最佳程式順利嘉義死了主人完整也許目錄檢驗人士範圍最佳而來我只。</a></h6><p class="text-truncate">媒體床上適用於軟體實業晶片版本是從是由。</p></div></div></div>'
+                $("#text-ngation").html(strHTML);
+            })
+        })
+    </script>
+</body>
+
+</html>

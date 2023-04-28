@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:site_name" content="" />
+    <link rel="stylesheet" href="./text.css">
+    <title>website</title>
+    <link rel="stylesheet" href="./toggle button.css">
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="check"  onclick="change()">
+        <label for="check" class="button"></label>
+        <p class="state">狀態:</p>
+    </div>
+
+    <script>
+        function change(){
+            var checkBox=document.getElementById("check");
+            var state=document.querySelector(".state");
+            if(checkBox.checked){
+                // alert("checked");
+                state.innerHTML=state.innerHTML+
+                `<p class="state">狀態:checked</p>`
+            }else{
+                // alert("Unchecked");
+                state.innerHTML=state.innerHTML+
+                `<p class="state">狀態:Unchecked</p>`
+            }
+        }
+    </script>
+</body>
+</html>
