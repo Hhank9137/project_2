@@ -13,151 +13,16 @@
     <meta property="og:image" content="" />
     <meta property="og:site_name" content="" />
 
-    <title>0413JS</title>
+    <title>0517_JS</title>
 </head>
 
 <body>
     <!-- <script src="./js/jquery-3.6.4.min.js"></script> -->
-    <script>
-        // function calAge(year,birth){
-        //     var age = year - birth;
-        //     var temp = 'Your ' + age + ' years'
-        //     return temp;
-        // }
-        // var x = calAge(2023,1999);
-        // alert(x);
-
-        // function num_1(x,y){
-        //     // && = and , || = or
-        //     if (x > 1 && y == true){
-        //         alert(' X is bigger than 1')
-        //     }else if(x > 1 || y == false){
-        //         alert('X is smaller than 1')
-        //     }else{
-        //         alert("None!");
-        //     }
-        // }
-        // var ggg = num_1(1,true);
-
-        // var i = 0
-        // while(i <= 5){
-        //     alert(i+1);
-        //     i++;
-        // } 
-        // for (i=0;i<=10;i++){   
-        // // i++，代表每過一個loop，i的數值都會加1。
-        //     alert(i);
-        // }
-
-        // setTimeout(function, milliseconds)
-        // setTimeout(function(){
-        //     alert('123');
-        //     alert('456');
-        // },3000);    //3000(毫秒)=3秒
-
-        // window.location = 'local' 窗口位置
-        function location_1() {
-            setTimeout(function () {
-                window.location = 'https://google.com'
-            }, 3000)
-        }
-
-
-        // subString (處理string)
-        // string.substring(start, end)
-        function subString_1() {
-            var str = "something_text";
-            var temp = str.substring(0, 4);
-            alert(temp);
-        }
-
-        // indexof：indexOf_1
-        // string.indexOf(searchvalue, start)
-        function indexOf_1() {
-            var str = "Hello world, welcome to the universe";
-            var x = str.indexOf('the');
-            return x
-        }
-
-        //for 迴圈  for_1
-        function for_1() {
-            var friends = ["小明", "小黃", "小黑"]
-            for (var i = 0; i < friends.length; i++) {
-                document.write(friends[i] + "<br>");
-            }
-            var questions = [
-                {
-                    prompt: "今天星期幾? \n(a)星期一\n(b)星期二\n(c)星期三\n(d)星期四\n(e)星期五",
-                    answer: "d"
-                },
-                {
-                    prompt: "明天星期幾? \n(a)星期一\n(b)星期二\n(c)星期三\n(d)星期四\n(e)星期五",
-                    answer: "e"
-                },
-                {
-                    prompt: "昨天星期幾? \n(a)星期一\n(b)星期二\n(c)星期三\n(d)星期四\n(e)星期五",
-                    answer: "c"
-                }
-            ]
-            // console.log(questions.length); 
-
-            var score = 0;
-            var n = 1;
-            for (var i = 0; i < questions.length; i++) {
-                var input = prompt(questions[i].prompt);
-                // 顯示第n題的答案
-                console.log(questions[i].answer);
-                if (input == questions[i].answer) {
-                    console.log("第" + n + "題，答對囉!")
-                    score++;
-                } else {
-                    console.log("第" + n + "題，答錯囉!")
-                }
-                // 過一題會n+1
-                n++;
-            }
-            alert("答對了：" + score + "題!");
-
-        }
-
-
-        //二維陣列、巢狀迴圈 TDarray
-        function TDarray() {
-            var number = [1, 2, 3]; //一維陣列
-            var num = [
-                [1, 2, 3],
-                [4, 5, 6],
-                [7, 8, 9],
-                [0],
-            ];
-            for (var x = 0; x < num.length; x++) {
-                console.log("第" + (x + 1) + "行陣列的值");
-                // num[x]第[x]行的數量
-                for (var y = 0; y < num[x].length; y++) {
-                    console.log(num[x][y]);
-                }
-            }
-            // for(var i=0; i<4;i++){
-            //     for(var j=0; j<3;j++){
-            //         console.log("i=" + i  + "j=" + j);
-            //     }
-            // }
-        }
-
-        //class
-        class Student {
-            constructor(name, year, height){
-                this.name = name;
-                this.year = year;
-                this.height = height;
-            }
-            student_age(){
-                return (2023 - this.year);
-            }
-        }
-        var student_1 = new Student("皓程", "1999", "168");
-        console.log(student_1);
-    </script>
+   <!-- <script src="./js/map_方法.js"></script> -->
+    <!-- <script src="./js/forEach_方法.js"></script> -->
+    <!-- <script src="./js/filter_方法.js"></script> -->
+    <!-- <script src="./js/find_方法.js"></script> -->
+    <script src="./js/reduce_方法.js"></script>
 </body>
 
 </html>
