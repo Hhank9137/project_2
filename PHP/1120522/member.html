@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html >	
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>後台管理系統</title>
+	
+	<!-- ================= Favicon ================== -->
+    <!-- Standard -->
+    <link rel="shortcut icon" href="logo/fav.png">
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="logo/fav.png">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="logo/fav.png">
+    <!-- Standard iPad Touch Icon--> 
+    <link rel="apple-touch-icon" sizes="72x72" href="logo/fav.png">
+    <!-- Standard iPhone Touch Icon--> 
+    <link rel="apple-touch-icon" sizes="57x57" href="logo/fav.png">
+	
+	<!-- Styles -->
+    <link href="assets/fontAwesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="assets/css/lib/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/lib/mmc-chat.css" rel="stylesheet" />
+    <link href="assets/css/lib/sidebar.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/lib/nixon.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+	
+	<style type="text/css">
+
+	</style>
+    <script>
+    function redirectDialog(filename, mode, msg) {
+        alert(msg);
+
+        location.replace(filename + "?mode=" + mode);
+    }        
+    function deleteConfirm(filename, id) {
+                if (confirm("警告：\n  確定刪除編號為 " + id + " 的資料嗎?") == 1)
+                    location.replace(filename + "?mode=delete&id=" + id);
+                else
+                    return false;
+            }
+
+    </script>    
+</head>
+
+<body>
+
+    <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+        <div class="nano">
+            <div class="nano-content">
+                <ul>
+                    <li><a href="index.php"><i class="ti-home"></i> 管理者首頁</a> </li>		 
+					<li><a href="member.html"><i class="ti-control-record"></i> 1.會員資料管理</a></li>	                  	
+					<li><a href="login.php?st=logout"><i class="ti-close"></i> 登出</a></li>
+					 
+                </ul>
+            </div>
+        </div>
+    </div><!-- /# sidebar -->
+
+
+
+
+    <div class="header">
+        <div class="pull-left">
+                        <div class="logo">
+                <a href="index.html">
+                     <span style="font-size:18px;color:#fff; font-weight"><img id="logoImg" src="logo/logoSmall.png" data-logo_big="logo/logoSmall.png" data-logo_small="logo/logoSmall.png"  />後台管理系統</span>
+                </a>
+            </div>
+            <div class="hamburger sidebar-toggle">
+                <span class="ti-menu"></span>
+            </div>
+        </div>
+
+        
+    </div>
+
+	
+    <!-- END chat Sidebar-->
+
+
+    <div class="content-wrap">
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 p-0">
+                        <div class="page-header">
+							<div class="page-title">
+								<h1>您好！登入時間：</h1>
+							</div>
+						</div>
+                    </div>
+                    
+                </div>
+				<div class="main-content"> 
+				
+				<div class="col-lg-12">
+                            <div class="card alert">
+                                <div class="card-header">
+                                    <h2>會員資料管理</h2><Br/>
+									 <div class="row">
+									<a href="memberdetail.html" ><button type="button" class="col-lg-2 btn btn-primary btn-flat btn-addon m-b-10 m-l-20"><i class="ti-plus"></i>新增會員 </button></a>
+									<div class="basic-form col-lg-8">
+                                        <form>
+                                            
+                                            <div class="form-group">
+                                                
+                                                <div class="input-group input-group-default">
+                                                    <input type="text" placeholder="Search Round" name="Search" class="form-control">
+                                                    <span class="input-group-btn"><button class="btn btn-primary btn-group-right" type="submit"><i class="ti-search"></i> 查詢</button></span>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        </form>
+                                    </div>
+									</div>
+                                </div>
+                                
+								<div class="card-body">
+                                    <table class="table table-responsive table-striped m-t-30">
+                                        <thead>
+                                            <tr style="border-top:1px solid #e7e7e7;">
+                                                <th>會員帳號</th>
+                                                <th>會員名稱</th>
+                                                <th>密碼</th>
+                                                <th>登入時間</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            
+                                            <tr>
+                                                <th scope="row">aaaaa</th>
+                                                <td>bbbbbb</td>
+                                                <td>22222222222</td>
+                                                <td>2023-01-01 18:00</td>
+                                                
+                                               <td><a href="#" ><button type="button" class="btn btn btn-info btn btn-flat btn-addon btn-sm m-b-5 m-l-5"><i class="ti-pencil-alt"></i>修改</button></a><a href="#" ><button type="button" class="btn btn btn-default btn btn-flat btn-addon btn-sm m-b-5 m-l-5"><i class="ti-trash"></i>刪除</button></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">aaaaa</th>
+                                                <td>bbbbbb</td>
+                                                <td>22222222222</td>
+                                                <td>2023-01-01 18:00</td>
+                                                
+                                                 <td><a href="#" ><button type="button" class="btn btn btn-info btn btn-flat btn-addon btn-sm m-b-5 m-l-5"><i class="ti-pencil-alt"></i>修改</button></a><a href="#" ><button type="button" class="btn btn btn-default btn btn-flat btn-addon btn-sm m-b-5 m-l-5"><i class="ti-trash"></i>刪除</button></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">aaaaa</th>
+                                                <td>bbbbbb</td>
+                                                <td>22222222222</td>
+                                                <td>2023-01-01 18:00</td>
+                                                
+                                                 <td><a href="#" ><button type="button" class="btn btn btn-info btn btn-flat btn-addon btn-sm m-b-5 m-l-5"><i class="ti-pencil-alt"></i>修改</button></a><a href="#" ><button type="button" class="btn btn btn-default btn btn-flat btn-addon btn-sm m-b-5 m-l-5"><i class="ti-trash"></i>刪除</button></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+								
+						
+								
+                            </div>
+                        </div><!-- /# column -->
+						
+                    </div>
+		
+                </div><!-- /# container-fluid -->
+            </div><!-- /# main -->
+        </div><!-- /# content wrap -->
+        
+        
+        
+        
+        
+        
+        
+        <script src="assets/js/lib/jquery.min.js"></script><!-- jquery vendor -->
+        <script src="assets/js/lib/jquery.nanoscroller.min.js"></script><!-- nano scroller -->  
+        <script src="assets/js/lib/sidebar.js"></script><!-- sidebar -->
+        <script src="assets/js/lib/bootstrap.min.js"></script><!-- bootstrap -->
+        <script src="assets/js/lib/mmc-common.js"></script>
+        <script src="assets/js/lib/mmc-chat.js"></script>
+        <!--  flot-chart js -->
+        <script src="assets/js/lib/flot-chart/excanvas.min.js"></script>
+        <script src="assets/js/lib/flot-chart/jquery.flot.js"></script>
+        <script src="assets/js/lib/flot-chart/jquery.flot.pie.js"></script>
+        <script src="assets/js/lib/flot-chart/jquery.flot.time.js"></script>
+        <script src="assets/js/lib/flot-chart/jquery.flot.stack.js"></script>
+        <script src="assets/js/lib/flot-chart/jquery.flot.resize.js"></script>
+        <script src="assets/js/lib/flot-chart/jquery.flot.crosshair.js"></script>
+        <script src="assets/js/lib/flot-chart/curvedLines.js"></script>
+        <script src="assets/js/lib/flot-chart/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+        <script src="assets/js/lib/flot-chart/flot-chart-init.js"></script>
+        <!-- // flot-chart js -->
+        <script src="assets/js/scripts.js"></script><!-- scripit init-->
+          
+        
+        </body>
+        
+        </html>
