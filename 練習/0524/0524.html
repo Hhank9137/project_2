@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    
+    li input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    
+    .delete-btn {
+      margin-left: auto;
+      background-color: #f44336;
+    }
+    
+    .delete-btn:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>To do List</h1>
+    <input id="taskInput" type="text" placeholder="Enter task...">
+    <button id="addButton">Add</button>
+    <ul id="taskList"></ul>
+  </div>
+<!-- JS -->
+  <script>
+    const taskInput = document.getElementById('taskInput');
+    const addButton = document.getElementById('addButton');
+    const taskList = document.getElementById('taskList');
+    
+    addButton.addEventListener('click', function() {
+      const taskText = taskInput.value;
+      if (taskText.trim() !== '') {
+        // trim()  方法會移除字串起始及結尾處的空白字元
+        const listItem = document.createElement('li');
+        // 將 listItem 定義標籤名稱 <li> </li>;
+
+        const checkbox = document.createElement('input');
+        // 將 checkbox 定義標籤名稱 <input> </input>;
+        
+        checkbox.type = 'checkbox';
+        // 將 checkbox 定義標籤型別 type="checkbox";
+        // const checkbox = <input type="checkbox"
+
+        listItem.appendChild(checkbox);
+        // .appendChild()方法將一個節點附加到指定父節點的子節點列表的末尾處。
+        // 在變數listItem ( <li></li> )加入變數checkbox( <input type="checkbox"></input> )
+        // <li><input type="checkbox"></li>
+
+        console.log(listItem);
+
+        listItem.appendChild(document.createTextNode(taskText));
+        // .createTextNode() 創建一個新的文字節點.
+        taskList.appendChild(listItem);
+        taskInput.value = '';
+      }
+    });
+    
+    taskList.addEventListener('click', function(event) {
+      if (event.target.className === 'delete-btn') {
+        console.log(ok)
+        const listItem = event.target.parentElement;
+        taskList.removeChild(listItem);
+      }
+    });
+  </script>
+</body>
+</html>
