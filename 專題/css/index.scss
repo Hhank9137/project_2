@@ -2,21 +2,24 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: rgba($color: #011d24, $alpha: .25);
+    z-index: -3;
+    
     div.bgc{
         border-radius: 10px;
-        background-color: #252530;
+        background-color: #58589edc;
         width: 100%;
-        height: 100vh;
+        min-height: 20vh;
         opacity: 0.5;
         position: relative;
         z-index: -3;
     }
     // 標頭
     div.head{
+        
         // 上方導覽列
-    
             div.topbar{
-                padding : 10px 5px ;
+                // padding : 10px 5px ;
                 width: 98vw;
                 // border: 1px solid burlywood;
                 display: flex;
@@ -25,66 +28,37 @@ body{
                 top: 0;
                 left: 0;
                 z-index: 1;
-                // left logo
                 div.logo{
-                    
                     img{
                         border-radius: 20px;
-                        width: 200px;
-                        height: 100px;
+                        min-width: 10%;
+                        height: 80px;
                         // animation: img 4s;
                     }
                 }
                 // right navbar
                 div.nav_b{
+                    display: flex;
                     ul.ul_T{
                         padding: 0;
-                        display: grid;
                         display: flex;
                         position: relative;
                         li{
-                            margin-right: 30px;
+                            margin-right: 10px;
                             list-style-type: none;
                             display: flex;
                             align-items: center;
                             a{
                                 text-decoration: none;
                                 cursor: pointer;
-                                color: #776be0;
+                                color: #ee2805f3;
                                 &:hover{
-                                 color: aqua;
+                                 color: rgb(229, 240, 240);
                                  font-weight: bolder;
-                                 background-color: #992d2da2;
-                                 border-radius: 10px;
-                                 padding: 5px;
+                                 padding: 2px;
                                 }
                             }
                         }
-                        ul.ul{
-                            margin: 0;
-                            padding: 0;
-                            border-radius: 5px 10px 10px 10px;
-                            position: absolute;
-                            top: 34px;
-                            margin-left: 20px;
-                            display: none;
-                            // width: 50px;
-                            background-color: aliceblue;
-                            color: #123456;
-                            font-weight: bolder;
-                            
-                            &::before{
-                                content: '';
-                                position: absolute;
-                                top: -4px;
-                                left: 0px;
-                                height: 10px;
-                                width: 7px;
-                                // border: 1px solid black;
-                                border-radius: 5px 50px 0  0 / 
-                                5px 50px 0  10px;
-                                background-color: aliceblue;
-                            }
                             li{
                                 padding:0 10px;
                             }
@@ -92,23 +66,37 @@ body{
                     }
                 }
             }
-        }
-}
 
-@keyframes img_h{
-    0%{
-        transform:rotate(0deg);
-    }
+            div.content{
+                display: flex;
+                justify-content: center;
+                padding: 3px;
+                width: 98vw;
+                iframe{
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 85vh;
+                }
+                
+            }
+        }
+
+
+// @keyframes img_h{
+//     0%{
+//         transform:rotate(0deg);
+//     }
     
-    100%{
-        transform:rotate(180deg);
-    }
-}
-@keyframes img_o{
-    0%{
-        transform:rotate(180deg);
-    }
-    100%{
-        transform:rotate(360deg);
-    }
-}
+//     100%{
+//         transform:rotate(180deg);
+//     }
+// }
+// @keyframes img_o{
+//     0%{
+//         transform:rotate(180deg);
+//     }
+//     100%{
+//         transform:rotate(360deg);
+//     }
+// }

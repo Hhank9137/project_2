@@ -2,18 +2,19 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: rgba(1, 29, 36, 0.25);
+  z-index: -3;
 }
 body div.bgc {
   border-radius: 10px;
-  background-color: #252530;
+  background-color: rgba(88, 88, 158, 0.862745098);
   width: 100%;
-  height: 100vh;
+  min-height: 20vh;
   opacity: 0.5;
   position: relative;
   z-index: -3;
 }
 body div.head div.topbar {
-  padding: 10px 5px;
   width: 98vw;
   display: flex;
   justify-content: space-between;
@@ -24,17 +25,19 @@ body div.head div.topbar {
 }
 body div.head div.topbar div.logo img {
   border-radius: 20px;
-  width: 200px;
-  height: 100px;
+  min-width: 10%;
+  height: 80px;
+}
+body div.head div.topbar div.nav_b {
+  display: flex;
 }
 body div.head div.topbar div.nav_b ul.ul_T {
   padding: 0;
-  display: grid;
   display: flex;
   position: relative;
 }
 body div.head div.topbar div.nav_b ul.ul_T li {
-  margin-right: 30px;
+  margin-right: 10px;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -42,54 +45,25 @@ body div.head div.topbar div.nav_b ul.ul_T li {
 body div.head div.topbar div.nav_b ul.ul_T li a {
   text-decoration: none;
   cursor: pointer;
-  color: #776be0;
+  color: rgba(238, 40, 5, 0.9529411765);
 }
 body div.head div.topbar div.nav_b ul.ul_T li a:hover {
-  color: aqua;
+  color: rgb(229, 240, 240);
   font-weight: bolder;
-  background-color: rgba(153, 45, 45, 0.6352941176);
-  border-radius: 10px;
-  padding: 5px;
+  padding: 2px;
 }
-body div.head div.topbar div.nav_b ul.ul_T ul.ul {
-  margin: 0;
-  padding: 0;
-  border-radius: 5px 10px 10px 10px;
-  position: absolute;
-  top: 34px;
-  margin-left: 20px;
-  display: none;
-  background-color: aliceblue;
-  color: #123456;
-  font-weight: bolder;
-}
-body div.head div.topbar div.nav_b ul.ul_T ul.ul::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: 0px;
-  height: 10px;
-  width: 7px;
-  border-radius: 5px 50px 0 0/5px 50px 0 10px;
-  background-color: aliceblue;
-}
-body div.head div.topbar div.nav_b ul.ul_T ul.ul li {
+body div.head div.topbar div.nav_b ul.ul_T li {
   padding: 0 10px;
 }
-
-@keyframes img_h {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
+body div.content {
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  width: 98vw;
 }
-@keyframes img_o {
-  0% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+body div.content iframe {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+  height: 85vh;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>方向鍵控制遊戲</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /* body{
+            width: 100vw;
+            height: 100vh;
+        } */
+        #player {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="player"></div>
+
+    
+</body>
+<script>
+    // 獲取玩家元素
+var player = document.getElementById('player');
+
+// 初始化玩家位置
+var playerX = 0;
+var playerY = 0;
+
+// 定義每次移動的距離
+var moveDistance = 10;
+
+// 監聽鍵盤事件
+document.addEventListener('keydown', function(event) {
+    // 根據按下的方向鍵執行對應的操作
+    switch (event.keyCode) {
+        case 37: // 左鍵
+            playerX -= moveDistance;
+            break;
+        case 38: // 上鍵
+            playerY -= moveDistance;
+            break;
+        case 39: // 右鍵
+            playerX += moveDistance;
+            break;
+        case 40: // 下鍵
+            playerY += moveDistance;
+            break;
+    }
+
+    // 更新玩家位置
+    player.style.left = playerX + 'px';
+    player.style.top = playerY + 'px';
+});
+
+</script>
+</html>
