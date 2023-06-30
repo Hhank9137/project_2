@@ -1,0 +1,14 @@
+@media screen and (max-width:768px){
+    .section5_img, .section7_img{
+        z-index: -3;
+        right: 0;
+    }
+    .section5_text, .section7_text{
+        padding: 15px;
+        background-color: rgba(20,20,20,0.4);
+        color: antiquewhite;
+    }
+}
+.section9_text{
+    background-color: rgba(0,0,0, .2);
+}

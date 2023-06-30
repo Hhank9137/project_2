@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mycss.css">
+    <title>11.表單-2</title>
+    <style>
+        .demo:nth-child(1) {
+            border: 2px solid var(--color005);
+            padding-top: 1px;
+        }
+
+        .light {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 20px 20px 50px 50px;
+        }
+
+        .mycolor {
+            width: 300px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: rgba(red, green, blue, alpha);
+        }
+
+        .title {
+            width: 100%;
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 基本資料(首頁) -->
+    <div class="demo">
+        <div class="title fs-2 mb-2">首頁</div>
+        <!-- 帳號 -->
+        <div class="form-group row mb-2">
+            <label for="userId" class="col-sm-2 col-form-label">帳號</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="userId" id="userId">
+            </div>
+        </div>
+        <!-- 密碼 -->
+        <div class="form-group row mb-2">
+            <label for="passWord" class="col-sm-2 col-form-label">密碼</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" name="passWord" id="passWord">
+            </div>
+        </div>
+        <!-- Email -->
+        <div class="form-group row mb-2">
+            <label for="Email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" name="Email" id="Email">
+            </div>
+        </div>
+        <!-- 生日 -->
+        <div class="form-group row mb-2">
+            <label for="birthday" class="col-sm-2 col-form-label">生日</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control" name="birthday" id="birthday">
+            </div>
+        </div>
+        <!-- 年齡 -->
+        <div class="form-group row mb-2">
+            <label for="age-1" class="col-sm-2 col-form-label" id="age_text">年齡</label>
+            <div class="col-sm-10">
+                <input type="range" class="form-range" name="age-1" id="age-1" min="1" max="100" oninput="age()">
+            </div>
+        </div>
+        <!-- 最高學歷  aq = 學歷 -->
+        <div class="form-group row mb-2">
+            <label for="aq" class="col-sm-2 col-form-label">最高學歷</label>
+            <div class="col-sm-10">
+                <select class="form-select text-center" name="aq" id="aq">
+                    <option value="無填寫">--------最高學歷--------</option>
+                    <option value="博士">博士</option>
+                    <option value="碩士">碩士</option>
+                    <option value="大學(專)">大學(專)</option>
+                    <option value="高中(職)">高中(職)</option>
+                    <option value="其他">其他</option>
+                </select>
+            </div>
+        </div>
+        <!-- 興趣 -->
+        <div class="form-group row mb-2">
+            <label for="userId" class="col-sm-2 col-form-label">興趣(可複選)</label>
+            <div class="col-sm-10">
+                <input type="checkbox" name="interesting" id="" value="運動">
+                <label for="">運動</label>
+                <input type="checkbox" name="interesting" id="" value="閱讀">
+                <label for="">閱讀</label>
+                <input type="checkbox" name="interesting" id="" value="逛街">
+                <label for="">逛街</label>
+                <input type="checkbox" name="interesting" id="" value="電影">
+                <label for="">電影</label>
+            </div>
+        </div>
+        <!-- 血型 -->
+        <div class="form-group row mb-2">
+            <label for="userId" class="col-sm-2 col-form-label">血型</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="userId" id="userId">
+            </div>
+        </div>
+        <button type="button" class="btn btn-secondary btn-lg btn-block" id="btn">確認</button>
+        <div class="output"></div>
+    </div>
+    
+    <!-- 1.Switch -->
+    <div class="demo">
+        <div class="fs-2">1.switch</div>
+        <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input
+            " role="switch" id="myLed" nmae="myLed">
+            <label for="myLed" class="form-check-label myLed_text">開關燈</label>
+        </div>
+        <div class="light"></div>
+    </div>
+    <!-- 2.Range -->
+    <div class="demo">
+        <div class="fs-2">2.Range</div>
+        <label for="age" class="agE">年齡</label>
+        <input type="range" class="form-range" id="age" name="age" min="1" max="95">
+        <hr>
+        <!-- rgba -->
+        <label for="red" class="form-label red_text">紅燈</label>
+        <input type="range" class="form-range rex_text" id="red" name="red" min="0" max="255" oninput="color()">
+
+        <label for="green" class="form-label green_text">綠燈</label>
+        <input type="range" class="form-range" id="green" name="green" min="0" max="255" oninput="color()">
+
+        <label for="blue" class="form-label blue_text">藍燈</label>
+        <input type="range" class="form-range" id="blue" name="blue" min="0" max="255" oninput="color()">
+
+        <label for="alpha" class="form-lable alpha_text">透明度</label>
+        <input type="range" class="form-range" id="alpha" name="alpha" min="0" max="1" step="0.1" oninput="color()"
+            value="1">
+        <div class="mycolor"></div>
+        .
+    </div>
+    <!-- 3.form-check-inline -->
+    <div class="demo">
+        <div class="fs-2">3.form-check-inline</div>
+        <div class="form-check-inline">
+            <input type="checkbox" class="form-check-input" name="cbox" id="">
+            <label for="" class="form-check-label">選項001</label>
+        </div>
+        <div class="form-check-inline">
+            <input type="checkbox" class="form-check-input" name="cbox" id="">
+            <label for="" class="form-check-label">選項002</label>
+        </div>
+        <div class="form-check-inline">
+            <input type="checkbox" class="form-check-input" name="cbox" id="">
+            <label for="" class="form-check-label">選項003</label>
+        </div>
+        <div class="form-check-inline">
+            <input type="checkbox" class="form-check-input" name="cbox" id="">
+            <label for="" class="form-check-label">選項004</label>
+        </div>
+    </div>
+    <!-- 3.radio -->
+    <div class="demo">
+        <div class="fs-2"></div>
+        <div>
+            <input type="radio" class="" id="ro01" name="radio01">
+            <label for="ro01">選項001</label>
+        </div>
+
+    </div>
+
+
+
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script>
+        // 1. 開關燈
+        $("#myLed").change(function () {
+            console.log($(this).is(':checked'));  //$(this)"方法"：存取jQuery物件的屬性  //is(':checked')：判斷checkbox是否被勾選
+            if ($(this).is(':checked')) {
+                // 開燈
+                $(".myLed_text").html("開燈");
+                $(".light").css("background-color", "yellow");
+            } else {
+                // 關燈
+                $(".myLed_text").html("關燈");
+                $(".light").css("background-color", "black");
+            }
+        });
+
+        // 2. 年齡
+        $("#age").change(function () {
+            console.log($(this).val());
+            $(".agE").html(($(this).val()) + "歲"); //html(($(this).val()))取出range的值
+        });
+
+        // 2. 變換燈顏色
+        function color() {
+            $(".red_text").html("紅燈：" + $("#red").val());
+            $(".green_text").html("綠燈：" + $("#green").val());
+            $(".blue_text").html("藍燈：" + $("#blue").val());
+            $(".alpha_text").html("透明度：" + $("#alpha").val());
+            var red = $("#red").val();
+            var green = $("#green").val();
+            var blue = $("#blue").val();
+            var alpha = $("#alpha").val();
+            var color_setting = 'rgb(' + red + ',' + green + ',' + blue + ',' + alpha + ')';
+            console.log(color_setting);     //驗證color_setting是否有變化
+            $('.mycolor').css("background-color", color_setting);
+        };
+
+        // 3. 基本資料
+       
+       
+        $("#btn").click(function () {
+            var userId = $("#userId").val();
+            console.log("帳號：" +userId);
+
+            var passWord = $("#passWord").val();
+            console.log("密碼：" + passWord);
+
+            var Email = $("#Email").val();
+            console.log("Email：" + Email);
+
+            var birthday = $("#birthday").val();
+            console.log("生日：" + birthday);
+
+            var age = $("#age-1").val();
+            console.log("年齡：" + age);
+            
+            var aq = $("#aq").val();
+
+            var myinterest = [];
+            $.each($("input[name='interesting']:checked",function(){
+                myinterest.push($(this).val());
+            }));
+
+            var blood = [];
+
+            $(".output").html("帳號：" + userId + "<br>密碼：" +passWord+ "<br>Email：" +passWord + "<br>生日：" + birthday + "<br>年齡：" + age + "歲" + "<br>最高學歷：" + aq  + "<br>興趣" + myinterest.join('/') );
+        });
+
+        function age(){
+            $("#age_text").html("年齡：" + $("#age-1").val() + "歲");
+        }
+    </script>
+</body>
+
+</html>

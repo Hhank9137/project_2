@@ -1,0 +1,237 @@
+@keyframes starFlash{
+    from{opacity:1;}
+    to{opacity:0.2;}
+}
+@keyframes sunLight{
+    from{box-shadow:0 0 45px #f5c91f;}
+    to{box-shadow: 0 0 90px #f5c91a;}
+}
+@keyframes spin{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+html,body{
+    height:100%;
+    overflow:hidden;
+}
+#universe{
+    background: radial-gradient(#777,#000);
+}
+
+
+
+#stars{
+    height: 100%;
+    background-image: url(../img/stars.png);
+    background-size:cover;
+    animation: starFlash 3s infinite alternate;
+}
+
+#sun{
+    width:100px ;
+    height: 100px;
+    background: radial-gradient(#f5c313, #ec7e08);
+    border-radius: 50%;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -100px;
+    box-shadow: 0 0 45px #f5c91a;
+    animation:sunLight 3s infinite alternate;
+}
+
+/*地球 earth*/
+#earthOrbit{
+    width: 550px;
+    height: 550px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -270px;
+    margin-left: -270px;
+    border-radius: 50%;
+    border: 1px solid red;
+    animation: spin 30s linear infinite;
+}
+#earth{
+    width: 40px;
+    height: 40px;
+    top: 52%;
+    left: 3.4%;
+    position: absolute;
+    margin-top:-40px;
+    margin-left: -40px;
+    animation: spin 30s linear infinite;
+}
+
+/*月亮 moon*/
+#moonOrbit{
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    top:50%;
+    margin-top: -60px;
+    margin-left: -52px;
+    border: 1px solid red;
+    border-radius:50%;
+    animation: spin 30s linear infinite;
+}
+#moon{
+    background: radial-gradient(#fff, #777);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position:absolute;
+    top: 38%;
+    left: -13%;
+    animation: spin 0.1s linear infinite;
+}
+
+/*水星 mercury*/
+#mercuryOrbit{
+    border: 1px solid #1000ff;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    position: absolute;
+    top: -58px;
+    left: -58px;
+    animation: spin 20s linear infinite;
+}
+#mercury{
+    width: 30px;
+    height: 30px;
+    border-radius:50% ;
+    position:absolute;
+    top: 90px;
+    left: -15px;
+    animation: spin 20s linear infinite;
+}
+
+/*金星 Venus*/
+#venusOrbit{
+    width: 350px;
+    height: 350px;
+    border: 1px solid #daa520;
+    border-radius: 50%;
+    position: absolute;
+    top: -125px;
+    left: -125px;
+    animation: spin 70s linear 1s infinite;
+}
+#venus{
+    border-radius:50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 46%;
+    left: -15px;
+    animation: spin 40s linear 2s infinite;
+}
+
+/*火星 Mars*/
+#marsOrbit{
+    border: 1px solid #B0C4DE;
+    border-radius: 50%;
+    height: 720px;
+    width: 720px;
+    position:absolute;
+    top: -303px;
+    left: -303px;
+    animation: spin 80s linear 3s infinite;
+}
+#mars{
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    top:47%;
+    left: -2.2%;
+    border-radius: 50%;
+    animation: spin 40s linear 4s infinite;
+}
+
+/*木星 Jupiter*/
+#jupiterOrbit{
+    border: 1px solid #FFB366;
+    border-radius: 50%;
+    height: 770px;
+    width: 770px;
+    position:absolute;
+    top: -325px;
+    left: -330px;
+    animation: spin 90s linear 5s infinite;
+}
+#jupiter{
+    width: 25px;
+    height: 25px;
+    position:absolute;
+    top:47.1%;
+    left: -1.9%;
+    border-radius: 50%;
+    animation: spin 40s linear 6s infinite;
+}
+
+/*土星 Saturn*/
+#saturnOrbit{
+    border: 1px solid #E6D933;
+    border-radius: 50%;
+    height: 820px;
+    width: 820px;
+    position:absolute;
+    top: -350px;
+    left: -355px;
+    animation: spin 100s linear 7s infinite;
+}
+#saturn{
+    width: 25px;
+    height: 25px;
+    position:absolute;
+    top:47.2%;
+    left: -1.8%;
+    border-radius: 50%;
+    animation: spin 40s linear 8s infinite;
+}
+
+/*天王星 Uranus*/
+#uranusOrbit{
+    border: 1px solid #66FFE6;
+    border-radius: 50%;
+    height: 870px;
+    width: 870px;
+    position:absolute;
+    top: -375px;
+    left: -380px;
+    
+    animation: spin 110s linear 9s infinite;
+}
+#uranus{
+    width: 25px;
+    height: 25px;
+    position:absolute;
+    top:47.5%;
+    left: -1.7%;
+    border-radius: 50%;
+    animation: spin 40s linear 10s infinite;
+}
+
+/*海王星 Ｎeptunian*/
+#neptunianOrbit{
+    border: 1px solid #B0C4DE;
+    border-radius: 50%;
+    height: 920px;
+    width: 920px;
+    position:absolute;
+    top: -400px;
+    left: -405px;
+    animation: spin 120s linear 11s infinite;
+}
+#neptunian{
+    width: 25px;
+    height: 25px;
+    position:absolute;
+    top:47.8%;
+    left: -1.6%;
+    border-radius: 50%;
+    animation: spin 40s linear 12s infinite;
+}
