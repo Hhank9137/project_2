@@ -1,0 +1,230 @@
+@keyframes move {
+    0%{
+        opacity: 0;
+        transform:translateX(0%);
+    }
+    50%{
+        opacity: 100%;
+        transform:translateX(12%);
+    }
+    100%{
+        opacity: 55%;
+        transform: translateX(0.2%);
+    }
+}
+
+body{
+    height: 700px;
+    -webkit-font-smoothing: antialiased;
+}
+.container{
+    margin: 10px auto;
+    height: 100%;
+}
+.header{
+    background-repeat:no-repeat ;
+    height: 9%;
+    background-color: #1b1b1b;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    line-height: 50px;
+}
+.header img{
+    position: absolute;
+    width: 5vh;
+    margin-top: 8px;
+}
+.header .logoc{
+    position: relative;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+    color: #dfdfbb;
+    animation: move 3s;
+}
+a{
+    text-decoration: none;
+    color:#1b1b1b;
+}
+
+/*富邦勇士*/
+.content1{
+    /*clear: both;*/
+    height: 20%;
+    /* vertical-align: middle; */
+    background-color: #008fc7;
+    border-radius: 10px;
+}
+.content1:hover::after{
+    font-family: 'Noto Serif TC', serif;
+    content: "2020年7月臺北富邦勇士參與台灣職業籃球聯盟 P LEAGUE+ 的創立，以具體行動推動國內職籃發展，並連續兩個賽季奪下總冠軍，完成PLG歷史性的二連霸。";
+    margin-right: 10px;
+}
+
+/*新北國王*/
+.content2{
+    height: 20%;
+    background-color: #ffe600;
+    border-radius: 10px;
+}
+.content2:hover::after{
+    font-family: 'Noto Serif TC', serif;
+    content: "新北國王籃球隊由王文祥董事長率領家族成員成立，結合體育、生活技能、永續發展，盼協助培養身心靈健全的體育人才，結合社區發展，讓關懷充滿台灣每個角落。";
+    margin-right: 10px;
+}
+
+/*夢想家*/
+.content3{
+    height: 20%;
+    background-color: #90b540;
+    border-radius: 10px;
+}
+.content3:hover::after{
+    font-family: 'Noto Serif TC', serif;
+    content: "2014年9 月球隊轉隸富邦金控集團，富邦以更大的格局和視野經營「富邦勇士籃球隊」期能接軌國際，成為臺灣球隊經營的典範。";
+    margin-right: 10px;
+}
+
+/*高雄鋼鐵人*/
+.content4{
+    height: 20%;
+    background-color: #de0028 ;
+    border-radius: 10px;
+}
+.content4:hover::after{
+    font-family: 'Noto Serif TC', serif;
+    content: "高雄鋼鐵人「Kaohsiung Steelers」是成立於2021年的臺灣職業籃球隊，以高雄市作為球隊所在地、鳳山體育館作為球隊主場館。";
+    margin-right: 10px;
+}
+
+/*content img*/
+.content1 img,
+.content2 img,
+.content3 img,
+.content4 img{
+    position: relative;
+    height: 10vh;
+    left: 2px;
+    float: left;
+}
+
+.footer{
+    width: 100%;
+    height: 9%;
+    background-color: #1b1b1b;
+    color: #dfdfbb;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 8px;
+    clear: both;
+    
+}
+.footer img{
+    width: 15%;
+    height: 100%;
+}
+.footer .font{
+    display: inline-block;
+    color: wheat;
+    position: relative;
+    top: -25px;
+    left: 0;
+}
+
+
+/*手機 480px▼*/
+@media (max-width:480px)and (orientation:landscape){
+    body{
+        flex-direction: column;
+    }
+    .header img{
+        margin-top: 20px;
+    }
+    
+}
+/*平板 480 ~ 1080px*/
+@media (min-width:480px) and (max-width:1080px) {
+
+    .header{
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+        color:bisque;
+    }
+    .content1{
+        height: 35vh;
+        width: 50%;
+        float: left;
+        border-radius:  20px 0 0 0;
+        
+    }
+    .content2{
+        height: 35vh;
+        width: 50%;
+        float: left;
+        border-radius: 0 20px 0 0 ;
+    }
+    .content3{
+        height: 35vh;
+        width: 50%;
+        float: left;
+        margin-bottom: 20px;
+        border-radius: 0 0 0 20px;
+    }
+    .content4{
+        height: 35vh;
+        width: 50%;
+        float: left;
+        margin-bottom: 20px;
+        border-radius: 0 0 20px 0;
+    }
+    .footer img{
+        width: 7%;
+        height: 100%;
+    }
+}
+
+/*電腦視窗 1080px以上*/
+@media (min-width:1080px){
+    .header{
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+    }
+    .content1{
+        height: 60vh;
+        width: 25%;
+        float: left;
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 20px 0 0 20px;
+    }
+    .content2{
+        height: 60vh;
+        width: 25%;
+        float: left;
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 0;
+    }
+    .content3{
+        height: 60vh;
+        width: 25%;
+        float: left;
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 0;
+    }
+    .content4{
+        height: 60vh;
+        width: 25%;
+        float: left;
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 0 20px 20px 0;
+    }
+    .footer img{
+        width: 5%;
+        height: 100%;
+    }
+}
