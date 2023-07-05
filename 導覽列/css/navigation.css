@@ -1,0 +1,80 @@
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap');
+        
+        body{
+            font-family: 'Noto Serif TC', serif;
+        }
+        .fw-700{
+            font-weight: 700;
+        }
+        .fw-900{
+            font-weight:900;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        .bg-cover{
+            height: 220px;
+            background-position: center center;
+            background-size: cover;
+        }
+        .timeline-section{
+            position: relative;
+        }
+        .timeline-section:before{
+            position: absolute;
+            background-color: var(--color003);
+            content: "";
+            width: 3px;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .timeline-section-pointer{
+            position: relative;
+        }
+        .timeline-section-pointer:before{
+            position: absolute;
+            content: "";
+            background-color: whitesmoke;
+            width: 10px;
+            height: 10px;
+            top: 0;
+            bottom: 0;
+            border: 2px solid var(--color002);
+            border-radius: 50%;
+        }
+        .timeline-section-pointer:hover:before{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            transform: translateX(1px);
+        }
+        @media screen and (max-width:1024px){
+            .timeline-section:before{
+            position: absolute;
+            background-color: var(--color003);
+            content: "";
+            width: 3px;
+            top: 0;
+            bottom: 0;
+            left: -1.5%;
+            transform: translateX(-50%);
+            }
+            .timeline-section-pointer:before{
+                display: none;
+            }
+            .timeline-section-pointer:hover:before{
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                transform: scale(1.5);
+                transform: translateX(-2px);
+            }
+            div.fs-3:hover{
+                border: 1px solid black;
+            }
+
+        }
+ 

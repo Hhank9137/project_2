@@ -51,7 +51,7 @@ html,body{
     margin-top: -270px;
     margin-left: -270px;
     border-radius: 50%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     animation: spin 30s linear infinite;
 }
 #earth{
@@ -73,12 +73,12 @@ html,body{
     top:50%;
     margin-top: -60px;
     margin-left: -52px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius:50%;
     animation: spin 30s linear infinite;
 }
 #moon{
-    background: radial-gradient(#fff, #777);
+    /* background: radial-gradient(#fff, #777); */
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -90,7 +90,7 @@ html,body{
 
 /*水星 mercury*/
 #mercuryOrbit{
-    border: 1px solid #1000ff;
+    /* border: 1px solid #1000ff; */
     height: 220px;
     width: 220px;
     border-radius: 50%;
@@ -113,7 +113,7 @@ html,body{
 #venusOrbit{
     width: 350px;
     height: 350px;
-    border: 1px solid #daa520;
+    /* border: 1px solid #daa520; */
     border-radius: 50%;
     position: absolute;
     top: -125px;
@@ -132,7 +132,7 @@ html,body{
 
 /*火星 Mars*/
 #marsOrbit{
-    border: 1px solid #B0C4DE;
+    /* border: 1px solid #B0C4DE; */
     border-radius: 50%;
     height: 720px;
     width: 720px;
@@ -153,7 +153,7 @@ html,body{
 
 /*木星 Jupiter*/
 #jupiterOrbit{
-    border: 1px solid #FFB366;
+    /* border: 1px solid #FFB366; */
     border-radius: 50%;
     height: 770px;
     width: 770px;
@@ -174,7 +174,7 @@ html,body{
 
 /*土星 Saturn*/
 #saturnOrbit{
-    border: 1px solid #E6D933;
+    /* border: 1px solid #E6D933; */
     border-radius: 50%;
     height: 820px;
     width: 820px;
@@ -195,7 +195,7 @@ html,body{
 
 /*天王星 Uranus*/
 #uranusOrbit{
-    border: 1px solid #66FFE6;
+    /* border: 1px solid #66FFE6; */
     border-radius: 50%;
     height: 870px;
     width: 870px;
@@ -217,7 +217,7 @@ html,body{
 
 /*海王星 Ｎeptunian*/
 #neptunianOrbit{
-    border: 1px solid #B0C4DE;
+    /* border: 1px solid #B0C4DE; */
     border-radius: 50%;
     height: 920px;
     width: 920px;

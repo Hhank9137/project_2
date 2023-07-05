@@ -6,96 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/mycss.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap');
-        
-        body{
-            font-family: 'Noto Serif TC', serif;
-        }
-        .fw-700{
-            font-weight: 700;
-        }
-        .fw-900{
-            font-weight:900;
-        }
-        .bg-cover{
-            height: 220px;
-            background-position: center center;
-            background-size: cover;
-        }
-        .timeline-section{
-            position: relative;
-        }
-        .timeline-section:before{
-            position: absolute;
-            background-color: var(--color003);
-            content: "";
-            width: 3px;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .timeline-section-pointer{
-            position: relative;
-        }
-        .timeline-section-pointer:before{
-            position: absolute;
-            content: "";
-            background-color: whitesmoke;
-            width: 10px;
-            height: 10px;
-            top: 0;
-            bottom: 0;
-            border: 2px solid var(--color002);
-            border-radius: 50%;
-        }
-        .timeline-section-pointer:hover:before{
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            transform: translateX(1px);
-        }
-    </style>
-    <title>flex-bootstrap</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link rel="stylesheet" href="./css/navigation.css">
+    
+    <title>網頁作品集</title>
 </head>
 <body>
     <div class="container">
-        <div class="timeline-section">  <!--時間軸-->
+        <!-- 時間軸 -->
+        <div class="timeline-section">  
+            <!-- 1.寵物介紹 -->
             <div class="row mt-3 justify-content-center align-items-center flex-row-reverse timeline-section-pointer">
                 <div class="col-md-6">
                     <div class="text01 text-center">
-                        <div class="fs-3 fw-900">
-                            1.你還農村，天氣。
+                        <div class="fs-3 fw-900  wow animate__backInDown" data-wow-iteration="1" data-wow-duration="900ms">
+                            1.寵物介紹
                         </div>
-                        <div class="fw-700" >英文但他雖然加強對他動態效益到我出台對她隱藏，兒童臺灣美女春天發揮機票灌水不想請求圖形，來自和我進行的說節省安全共有上次把你。
+                        <div class="fw-700">
+                            <a href="../寵物官網/index.html"  target="_blank" title="寵物介紹">介紹家中飼養的寵物</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="myimg bg-cover" style="background-image: url(./img/free.avif);">
-                    </div>
+                <div class="col-md-6 ;">
+                    <!-- <div class="myimg bg-cover" style="background-image: url(./img/free.avif);">
+                    </div> -->
+                    <iframe src="../寵物官網/index.html" style="width: 100%"></iframe>
                 </div >
             </div>
+            <!-- 2.行星轉動 -->
             <div class="row mt-3 justify-content-center align-items-center timeline-section-pointer">
                 <div class="col-md-6">
                     <div class="text01 text-center">
-                        <div class="fs-3 fw-900">
-                            2.你還農村，天氣。
+                        <div class="fs-3 fw-900  wow animate__backInLeft" data-wow-iteration="1" data-wow-duration="2500ms">
+                            2.行星轉動
                         </div>
-                        <div class="fw-700" >英文但他雖然加強對他動態效益到我出台對她隱藏，兒童臺灣美女春天發揮機票灌水不想請求圖形，來自和我進行的說節省安全共有上次把你。
+                        <div class="fw-700" ><a href="../行星轉動/index.html" target="_blank">行星轉動</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="myimg bg-cover" style="background-image: url(./img/free.jpg);">
+                    <iframe src="../行星轉動/index.html" style="width: 100%"></iframe>
                     </div>
                 </div >
             </div>
+            <!-- 3. -->
             <div class="row mt-3 justify-content-center align-items-center flex-row-reverse timeline-section-pointer">
                 <div class="col-md-6">
                     <div class="text01 text-center">
-                        <div class="fs-3 fw-900">
+                        <div class="fs-3 fw-900  wow animate__backInRight" data-wow-iteration="1" data-wow-duration="3500ms">
                             3.你還農村，天氣。
                         </div>
                         <div class="fw-700" >英文但他雖然加強對他動態效益到我出台對她隱藏，兒童臺灣美女春天發揮機票灌水不想請求圖形，來自和我進行的說節省安全共有上次把你。
@@ -107,10 +68,11 @@
                     </div>
                 </div >
             </div>
+            <!-- 4. -->
             <div class="row mt-3 justify-content-center align-items-center timeline-section-pointer">
                 <div class="col-md-6">
                     <div class="text01 text-center">
-                        <div class="fs-3 fw-900">
+                        <div class="fs-3 fw-900  wow animate__pulse" data-wow-iteration="2" data-wow-duration="950ms">
                             4.你還農村，天氣。
                         </div>
                         <div class="fw-700" >英文但他雖然加強對他動態效益到我出台對她隱藏，兒童臺灣美女春天發揮機票灌水不想請求圖形，來自和我進行的說節省安全共有上次把你。
@@ -122,10 +84,11 @@
                     </div>
                 </div >
             </div>
+            <!-- 5. -->
             <div class="row mt-3 justify-content-center align-items-center flex-row-reverse timeline-section-pointer">
                 <div class="col-md-6">
                     <div class="text01 text-center">
-                        <div class="fs-3 fw-900">
+                        <div class="fs-3 fw-900  wow animate__tada" data-wow-iteration="1" data-wow-duration="950ms">
                             5.你還農村，天氣。
                         </div>
                         <div class="fw-700" >英文但他雖然加強對他動態效益到我出台對她隱藏，兒童臺灣美女春天發揮機票灌水不想請求圖形，來自和我進行的說節省安全共有上次把你。
@@ -137,10 +100,11 @@
                     </div>
                 </div >
             </div>
+            <!-- 6. -->
             <div class="row my-3 justify-content-center align-items-center timeline-section-pointer">
                 <div class="col-md-6">
                     <div class="text01 text-center">
-                        <div class="fs-3 fw-900">
+                        <div class="fs-3 fw-900  wow animate__bounce" data-wow-iteration="2" data-wow-duration="950ms">
                             6.你還農村，天氣。
                         </div>
                         <div class="fw-700" >英文但他雖然加強對他動態效益到我出台對她隱藏，兒童臺灣美女春天發揮機票灌水不想請求圖形，來自和我進行的說節省安全共有上次把你。
@@ -154,5 +118,10 @@
             </div>
         </div >
     </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./WOW/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
