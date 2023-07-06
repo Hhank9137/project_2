@@ -55,7 +55,7 @@ a{
     background-color: #008fc7;
     border-radius: 10px;
 }
-.content1:hover::after{
+.content1::after{
     font-family: 'Noto Serif TC', serif;
     content: "2020年7月臺北富邦勇士參與台灣職業籃球聯盟 P LEAGUE+ 的創立，以具體行動推動國內職籃發展，並連續兩個賽季奪下總冠軍，完成PLG歷史性的二連霸。";
     margin-right: 10px;
@@ -67,7 +67,7 @@ a{
     background-color: #ffe600;
     border-radius: 10px;
 }
-.content2:hover::after{
+.content2::after{
     font-family: 'Noto Serif TC', serif;
     content: "新北國王籃球隊由王文祥董事長率領家族成員成立，結合體育、生活技能、永續發展，盼協助培養身心靈健全的體育人才，結合社區發展，讓關懷充滿台灣每個角落。";
     margin-right: 10px;
@@ -79,7 +79,7 @@ a{
     background-color: #90b540;
     border-radius: 10px;
 }
-.content3:hover::after{
+.content3:after{
     font-family: 'Noto Serif TC', serif;
     content: "2014年9 月球隊轉隸富邦金控集團，富邦以更大的格局和視野經營「富邦勇士籃球隊」期能接軌國際，成為臺灣球隊經營的典範。";
     margin-right: 10px;
@@ -91,7 +91,7 @@ a{
     background-color: #de0028 ;
     border-radius: 10px;
 }
-.content4:hover::after{
+.content4:after{
     font-family: 'Noto Serif TC', serif;
     content: "高雄鋼鐵人「Kaohsiung Steelers」是成立於2021年的臺灣職業籃球隊，以高雄市作為球隊所在地、鳳山體育館作為球隊主場館。";
     margin-right: 10px;

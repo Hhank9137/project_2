@@ -1,5 +1,5 @@
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap');
-        
+        @import url(./fontawesome-free-6.4.0-web/css/all.min.css);
         body{
             font-family: 'Noto Serif TC', serif;
         }
@@ -13,6 +13,10 @@
             text-decoration: none;
             color: blue;
         }
+        #navbar{
+            margin-bottom: 3.41rem;
+        }
+
         .bg-cover{
             height: 220px;
             background-position: center center;
@@ -51,7 +55,8 @@
             height: 15px;
             transform: translateX(1px);
         }
-        @media screen and (max-width:1024px){
+        /* RWD */
+        @media screen and (max-width:768px){
             .timeline-section:before{
             position: absolute;
             background-color: var(--color003);
@@ -72,9 +77,5 @@
                 transform: scale(1.5);
                 transform: translateX(-2px);
             }
-            div.fs-3:hover{
-                border: 1px solid black;
-            }
-
+            
         }
- 

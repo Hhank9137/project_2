@@ -1,44 +1,142 @@
 <!DOCTYPE html>
-<html lang="zh-hant-TW">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta property="og:title" content="" />
-    <meta property="og:type" content='website' />
-    <meta property="og:url" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="" />
-    <link rel="stylesheet" href="./style.css">
-    <title>website</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mycss.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link rel="stylesheet" href="./css/navigation.css">
+    
+    <title>網頁作品集</title>
 </head>
-
-<body>
-    <div class="p">
-        <div class="class">
-            <h1>歡迎光臨</h1>
+<body id="top" style="background: #FFF9C9;" >
+    <!--Fixed top -->
+    <div id="navbar">
+        <nav class="navbar fixed-top navbar-light bg-info bg-opacity-75 ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#top">Hank's 作品集 </a>
+            </div>
+        </nav>
+    </div>
+    <section class="bg-dark bg-opacity-25">
+        <div class="container text-end">
+          <a href="https://www.facebook.com/" class="me-2" target="_blank"><i class="fa-brands fa-square-facebook text-primary"></i></a>
+          <a href="https://web.telegram.org/k/" target="_blank"><i class="fa-brands fa-telegram text-primary"></i></a>
+        </div>
+    </section>
+    <div class="container ">
+        <!-- 時間軸 -->
+        <div class="timeline-section">  
+            <!-- 1.寵物介紹 -->
+            <div class="row mt-3 justify-content-center align-items-center flex-row-reverse timeline-section-pointer">
+                <div class="col-md-6 ">
+                    <div class="text01 text-center">
+                        <div class=" wow animate__backInDown" data-wow-iteration="1" data-wow-duration="900ms">
+                            <div class="fs-3 fw-900 font">1.寵物介紹</div>
+                        
+                        <div class="fw-700">
+                            <a href="./寵物官網/index.html"  target="_blank" title="寵物介紹" >介紹家中飼養的寵物</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="col-md-6 ;">
+                    <iframe src="./寵物官網/index.html" style="width: 100%"></iframe>
+                </div >
+            </div>
+            <!-- 2.Band官網 -->
+            <div class="row mt-3 justify-content-center align-items-center timeline-section-pointer">
+                <div class="col-md-6">
+                    <div class="text01 text-center">
+                        <div class="wow animate__backInLeft" data-wow-iteration="1" data-wow-duration="2500ms">
+                            <div class="fs-3 fw-900">2.Band官網</div>
+                        
+                            <div class="fw-700" ><a href="./Band官網/index.html" target="_blank">Band官網</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="./Band官網/index.html" style="width: 100%"></iframe>
+                </div>
+            </div>
+            <!-- 3.PLG -->
+            <div class="row mt-3 justify-content-center align-items-center flex-row-reverse timeline-section-pointer">
+                <div class="col-md-6">
+                    <div class="text01 text-center">
+                        <div class="wow animate__backInRight" data-wow-iteration="1" data-wow-duration="3500ms">
+                            <div class="fs-3 fw-900">3.PLG 介紹</div>
+                        <div class="fw-700">
+                            <a href="./PLG/index.html" target="_blank">P<sup>+</sup> League簡介
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myimg bg-cover" style="background-image: url(./PLG/img/fplg.png);">
+                    </div>
+                </div>
+            </div>
+            <!-- 4. 台灣經濟發展歷史-->
+            <div class="row mt-3 justify-content-center align-items-center timeline-section-pointer">
+                <div class="col-md-6">
+                    <div class="text01 text-center">
+                        <div class=" wow animate__pulse" data-wow-iteration="2" data-wow-duration="1000ms">
+                            <div class="fs-3 fw-900">4. 台灣經濟發展歷史
+                        </div>
+                        <div class="fw-700"> 
+                            <a href="./台灣經濟發展歷史/index.html" target="_blank">介紹關於台灣經濟發展歷史</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                   
+                    <iframe src="./台灣經濟發展歷史/index.html" style="width: 100%"></iframe>
+                </div >
+            </div>
+            <!-- 5. 夏威夷租借-->
+            <div class="row mt-3 justify-content-center align-items-center flex-row-reverse timeline-section-pointer">
+                <div class="col-md-6">
+                    <div class="text01 text-center">
+                        <div class="  wow animate__tada" data-wow-iteration="1" data-wow-duration="950ms">
+                           <div class="fs-3 fw-900"> 5.夏威夷租借</div>
+                        
+                        <div class="fw-700" ><a href="./夏威夷租借/index.html" target="_blank">夏威夷租借</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="./夏威夷租借/index.html" style="width: 100%"></iframe>
+                </div >
+            </div>
+            <!-- 6.bird_fly -->
+            <div class="row my-3 justify-content-center align-items-center timeline-section-pointer">
+                <div class="col-md-6">
+                    <div class="text01 text-center">
+                        <div class="fs-3 fw-900  wow animate__bounce" data-wow-iteration="2" data-wow-duration="950ms">
+                            6. bird_fly遊戲
+                        </div>
+                        <div class="fw-700" ><a href="./bird_fly/index.html" target="_blank">Game: flappy_fly</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myimg bg-cover" style="background-image: url(./bird_fly/FlappyBird2.png);">
+                    </div>
+                </div >
+            </div>
         </div>
     </div>
-    <div class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla error officiis non sed ea.
-        Dolorum quibusdam nesciunt repellendus itaque. Eveniet sunt, amet necessitatibus molestiae non ipsum ipsa?
-        Aperiam, consectetur voluptate?</div>
-    <div class="ctlorem">
-        好多世界你說有的誘惑配件機票休閒好多技術，抽菸區青年如果您當然，教程被人收藏教師同志警察任何人自主，資格一份女士理論編輯再說媽媽生產由此看到重量皇帝時期鎖定判斷，污染最好風景保留尊重電視劇大廈是因為亞洲對於要求總體，日記評分發貼品質本月，到處觀眾，加油評。好多世界你說有的誘惑配件機票休閒好多技術，抽菸區青年如果您當然，教程被人收藏教師同志警察任何人自主，資格一份女士理論編輯再說媽媽生產由此看到重量皇帝時期鎖定判斷，污染最好風景保留尊重電視劇大廈是因為亞洲對於要求總體，日記評分發貼品質本月，到處觀眾，加油評。
-    </div>
-    <div class="ctlorem">
-        好多世界你說有的誘惑配件機票休閒好多技術，抽菸區青年如果您當然，教程被人收藏教師同志警察任何人自主，資格一份女士理論編輯再說媽媽生產由此看到重量皇帝時期鎖定判斷，污染最好風景保留尊重電視劇大廈是因為亞洲對於要求總體，日記評分發貼品質本月，到處觀眾，加油評。
-    </div>
-    <div class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla error officiis non sed ea.
-        Dolorum quibusdam nesciunt repellendus itaque. Eveniet sunt, amet necessitatibus molestiae non ipsum ipsa?
-        Aperiam, consectetur voluptate?</div>
-    <div class="project">
-        <button>
-            <a href="./20230327-TW/index.html">20230327-TW</a>
-        </button>
-    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./WOW/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
-
 </html>
