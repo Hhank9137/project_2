@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mycss.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>網頁作品集 - 個人履歷</title>
+</head>
+
+<body id="top" style="background: #E5E5CB;">
+    <!--Fixed top -->
+    <div id="navbar">
+        <nav class=" fixed-top  bg-opacity-75 ">
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" onclick="scrollToTop()" 
+                    style="cursor: pointer;" title="To Top">Hank's 作品集 - <span class="fs-6 ">個人履歷</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4 ps-5">
+                    <h5 class="h4 mb-3">
+                        <a href="../個人履歷/index.html">個人履歷</a>
+                    </h5>
+                    <h5 class="h4">
+                        <a href="../index.html">作品集(首頁)</a>
+                    </h5>
+                </div>
+            </div>
+            <section class="bg-dark bg-opacity-25">
+                <div class="container text-end">
+                    <a href="https://www.facebook.com/" class="me-2" target="_blank"><i
+                            class="fa-brands fa-square-facebook text-primary"></i></a>
+                    <a href="https://web.telegram.org/k/" target="_blank"><i
+                            class="fa-brands fa-telegram text-primary"></i></a>
+                </div>
+            </section>
+        </nav>
+    </div>
+    <!-- context -->
+    <div class="container ">
+       
+        
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./WOW/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+     <script>
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        }
+    </script>
+</body>
+
+</html>

@@ -9,18 +9,25 @@
         .fw-900{
             font-weight:900;
         }
-        a{
+        /* Fixed top */
+        #navbarToggleExternalContent a{
+            text-decoration: none;
+            color: #E5E5CB;
+        }
+
+        .container a{
             text-decoration: none;
             color: blue;
         }
         #navbar{
-            margin-bottom: 3.41rem;
+            margin-bottom: 6rem;
         }
 
         .bg-cover{
-            height: 220px;
-            background-position: center center;
-            background-size: cover;
+            height: 300px;
+            background-position: top center;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
         .timeline-section{
             position: relative;

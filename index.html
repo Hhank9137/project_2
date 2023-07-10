@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/mycss.css">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
-<link rel="stylesheet" href="./css/navigation.css">
-    
+    <link rel="stylesheet" href="./css/navigation.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <title>網頁作品集</title>
 </head>
-<body id="top" style="background: #FFF9C9;" >
+
+<body id="top" style="background: #FFF9C9;">
     <!--Fixed top -->
     <div id="navbar">
-        <nav class="navbar fixed-top navbar-light bg-info bg-opacity-75 ">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#top">Hank's 作品集 </a>
+        <nav class=" fixed-top  bg-opacity-75 ">
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" style="cursor: pointer;" onclick=scrollToTop() title="To Top">Hank's 作品集 </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4 ps-5">
+                    <h5 class="h4 mb-3">
+                        <a href="./Adobe/Adobe.html">PhotoShop、Illustrator</a>
+                    </h5>
+                    <h5 class="h4">
+                        <a href="./個人履歷/index.html">個人履歷</a>
+                    </h5>
+                </div>
             </div>
+            <section class="bg-dark bg-opacity-25">
+                <div class="container text-end">
+                    <a href="https://www.facebook.com/" class="me-2" target="_blank"><i
+                            class="fa-brands fa-square-facebook text-primary"></i></a>
+                    <a href="https://web.telegram.org/k/" target="_blank"><i
+                            class="fa-brands fa-telegram text-primary"></i></a>
+                </div>
+            </section>
         </nav>
     </div>
-    <section class="bg-dark bg-opacity-25">
-        <div class="container text-end">
-          <a href="https://www.facebook.com/" class="me-2" target="_blank"><i class="fa-brands fa-square-facebook text-primary"></i></a>
-          <a href="https://web.telegram.org/k/" target="_blank"><i class="fa-brands fa-telegram text-primary"></i></a>
-        </div>
-    </section>
-    <div class="container ">
+
+    <div class="container">
         <!-- 時間軸 -->
-        <div class="timeline-section">  
+        <div class="timeline-section">
             <!-- 1.寵物介紹 -->
             <div class="row mt-3 justify-content-center align-items-center flex-row-reverse timeline-section-pointer">
                 <div class="col-md-6 ">
                     <div class="text01 text-center">
                         <div class=" wow animate__backInDown" data-wow-iteration="1" data-wow-duration="900ms">
                             <div class="fs-3 fw-900 font">1.寵物介紹</div>
-                        
-                        <div class="fw-700">
-                            <a href="./寵物官網/index.html"  target="_blank" title="寵物介紹" >介紹家中飼養的寵物</a>
-                        </div></div>
+
+                            <div class="fw-700">
+                                <a href="./寵物官網/index.html" target="_blank" title="寵物介紹">介紹家中飼養的寵物</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 ;">
-                    <iframe src="./寵物官網/index.html" style="width: 100%"></iframe>
-                </div >
+                    <div class="myimg bg-cover" style="background-image: url(./img/寵物官網img.png);">
+                    </div>
+                </div>
             </div>
             <!-- 2.Band官網 -->
             <div class="row mt-3 justify-content-center align-items-center timeline-section-pointer">
@@ -54,26 +76,29 @@
                     <div class="text01 text-center">
                         <div class="wow animate__backInLeft" data-wow-iteration="1" data-wow-duration="2500ms">
                             <div class="fs-3 fw-900">2.Band官網</div>
-                        
-                            <div class="fw-700" ><a href="./Band官網/index.html" target="_blank">Band官網</a></div>
+
+                            <div class="fw-700">
+                                <a href="./Band官網/index.html" target="_blank">Band官網</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <iframe src="./Band官網/index.html" style="width: 100%"></iframe>
+                    <div class="myimg bg-cover" style="background-image: url(./img/Band官網img.png);">
+                    </div>
                 </div>
             </div>
             <!-- 3.PLG -->
             <div class="row mt-3 justify-content-center align-items-center flex-row-reverse timeline-section-pointer">
                 <div class="col-md-6">
                     <div class="text01 text-center">
-                        <div class="wow animate__backInRight" data-wow-iteration="1" data-wow-duration="3500ms">
+                        <div class="wow animate__backInRight" data-wow-iteration="1" data-wow-duration="1900ms">
                             <div class="fs-3 fw-900">3.PLG 介紹</div>
-                        <div class="fw-700">
-                            <a href="./PLG/index.html" target="_blank">P<sup>+</sup> League簡介
-                            </a>
+                            <div class="fw-700">
+                                <a href="./PLG/index.html" target="_blank">P<sup>+</sup> League簡介
+                                </a>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -87,56 +112,69 @@
                     <div class="text01 text-center">
                         <div class=" wow animate__pulse" data-wow-iteration="2" data-wow-duration="1000ms">
                             <div class="fs-3 fw-900">4. 台灣經濟發展歷史
+                            </div>
+                            <div class="fw-700">
+                                <a href="./台灣經濟發展歷史/index.html" target="_blank">介紹關於台灣經濟發展歷史</a>
+                            </div>
                         </div>
-                        <div class="fw-700"> 
-                            <a href="./台灣經濟發展歷史/index.html" target="_blank">介紹關於台灣經濟發展歷史</a>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                   
-                    <iframe src="./台灣經濟發展歷史/index.html" style="width: 100%"></iframe>
-                </div >
+
+                    <div class="myimg bg-cover" style="background-image: url(./img/台灣發展img.png);">
+                    </div>
+                </div>
             </div>
             <!-- 5. 夏威夷租借-->
             <div class="row mt-3 justify-content-center align-items-center flex-row-reverse timeline-section-pointer">
                 <div class="col-md-6">
                     <div class="text01 text-center">
                         <div class="  wow animate__tada" data-wow-iteration="1" data-wow-duration="950ms">
-                           <div class="fs-3 fw-900"> 5.夏威夷租借</div>
-                        
-                        <div class="fw-700" ><a href="./夏威夷租借/index.html" target="_blank">夏威夷租借</a>
-                        </div>
+                            <div class="fs-3 fw-900"> 5.夏威夷旅遊官網</div>
+
+                            <div class="fw-700">
+                                <a href="./夏威夷租借/index.html" target="_blank">夏威夷租借</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <iframe src="./夏威夷租借/index.html" style="width: 100%"></iframe>
-                </div >
+                    <div class="myimg bg-cover" style="background-image: url(./img/夏威夷img.png);">
+                    </div>
+                </div>
             </div>
             <!-- 6.bird_fly -->
             <div class="row my-3 justify-content-center align-items-center timeline-section-pointer">
                 <div class="col-md-6">
                     <div class="text01 text-center">
                         <div class="fs-3 fw-900  wow animate__bounce" data-wow-iteration="2" data-wow-duration="950ms">
-                            6. bird_fly遊戲
+                            6. Flappy_fly遊戲
                         </div>
-                        <div class="fw-700" ><a href="./bird_fly/index.html" target="_blank">Game: flappy_fly</a>
+                        <div class="fw-700"><a href="./bird_fly/index.html" target="_blank">Game: flappy_fly</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="myimg bg-cover" style="background-image: url(./bird_fly/FlappyBird2.png);">
                     </div>
-                </div >
+                </div>
             </div>
         </div>
     </div>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="."></script>
     <script src="./WOW/dist/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <script>
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        }
+    </script>
 </body>
+
 </html>
