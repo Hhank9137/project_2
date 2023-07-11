@@ -3,6 +3,9 @@
 body{
     font-family: 'Noto Serif TC', serif;
 }
+.fw-500{
+    font-weight: 500;
+}
 .fw-700{
     font-weight: 700;
 }
@@ -12,7 +15,7 @@ body{
 /* Fixed top */
 #navbarToggleExternalContent a{
     text-decoration: none;
-    color: #AAC8A7;
+    color: #DAFFFB;
 }
 .row{
     display: flex;
@@ -29,7 +32,20 @@ body{
 span.fs-6{
     color: #46C2CB;
 }
+
+/* 最上方的導覽列 */
 #navbar{
     margin-bottom: 6rem;
 }
 
+#menu:hover{
+    color: #F1D4E5;
+}
+
+#top:hover{
+    color: #FFED00;
+}
+
+#collapseTwo li p:nth-child(1){
+    text-decoration: underline #8CC0DE;
+}

@@ -19,8 +19,15 @@
             text-decoration: none;
             color: blue;
         }
+        #top:hover{
+            color: #DC5F00;
+        }
         #navbar{
             margin-bottom: 6rem;
+        }
+
+        #menu:hover{
+            color: #9575DE;
         }
 
         .bg-cover{

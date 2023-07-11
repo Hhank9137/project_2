@@ -14,14 +14,14 @@
     <title>網頁作品集 - 個人履歷</title>
 </head>
 
-<body id="top" style="background: #E5E5CB;">
+<body  style="background: #E5E5CB;">
     <!--Fixed top -->
     <div id="navbar">
         <nav class=" fixed-top  bg-opacity-75 ">
             <nav class="navbar navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" onclick="scrollToTop()" 
-                    style="cursor: pointer;" title="To Top">Hank's 作品集 - <span class="fs-6 ">個人履歷</span></a>
+                    <a class="navbar-brand" onclick="scrollToTop()" style="cursor: pointer;" title="To Top" id="top">Hank's 作品集 -
+                        <span class="fs-6">個人履歷</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -31,11 +31,11 @@
             </nav>
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="bg-dark p-4 ps-5">
-                    <h5 class="h4 mb-3">
-                        <a href="../個人履歷/index.html">個人履歷</a>
+                    <h5 class="h4 mb-3" >
+                        <a id="menu" href="../個人履歷/index.html">個人履歷</a>
                     </h5>
                     <h5 class="h4">
-                        <a href="../index.html">作品集(首頁)</a>
+                        <a id="menu" href="../index.html">作品集(首頁)</a>
                     </h5>
                 </div>
             </div>
@@ -50,21 +50,211 @@
         </nav>
     </div>
     <!-- context -->
-    <div class="container ">
-       
-        
+    <div class="container">
+        <div class="card" style="width: 80vw" ;>
+            <div class="card-body">
+                <div class="card-title d-flex justify-content-center ">
+                    <h1 class="fw-500">個人履歷</h1>
+                </div>
+                <!-- 個人照片 -->
+                <div class="d-flex justify-content-center">
+                    <img src="./img/個人生活照.jpg" class="card-img-top w-50 mb-3 ">
+                </div>
+               
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                工作經歷
+                            </button>
+                        </h2>
+
+                        <!-- show -->
+                        <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush">
+                                    <!-- 1 -->
+                                    <li class="list-group-item">
+                                        <p>暑期工讀生 | 時間：2022/7-2022/8</p>
+                                        <p>公司名稱：FOX 瑞士商弗克司股份有限公司台灣分公司(其他運輸工具及零件製造修配業 500人以上)</p>
+                                        <p>台中市西屯區</p>
+                                        工作內容：安裝零件、檢測商品
+                                    </li>
+
+                                    <!-- 2 -->
+                                    <li class="list-group-item">
+                                        <p>工讀生 | 202012-2021/5</p>
+                                        <p>
+                                            公司名稱：準星科技股份有限公司(其他電子零組件相關腦 30~100人】
+                                            作業員/包裝員
+                                        </p>
+                                        <p>台中市南屯區</p>
+                                        工作內容：加工物件、檢測商品
+                                    </li>
+
+                                    <!-- 3 -->
+                                    <li class="list-group-item">
+                                        <p>工讀生 | 時間：2019/12-2020/12</p>
+                                        <p>公司名稱：品萃茶行(1~30人)</p>
+                                        <p>台中市大肚區</p>
+                                        工作內容：飲料包裝、製作 、泡茶、外送
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 學歷-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                學歷
+                            </button>
+                        </h2>
+
+                        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong> 私立嶺東科技大學 | 資訊科技系 (畢業) </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 證照 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                證照
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p>職訓局</p>
+
+                                        <p>電腦硬體：電腦硬體裝修技術士(乙級)、電腦硬體裝修技術士(丙級)</p>
+                                        <p>電子：工業電子(丙級)</p>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <p>Certiport</p>
+                                        <p>MTA-微軟專業應用技術國際認證 </p>
+
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <p>Microsoft</p>
+                                        <p>MOS</p>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <p>TQC+</p>
+                                        <p>基礎程式設計 Python</p>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <p>其他證照</p>
+                                        <p>iPAS-3D列印</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 個人自傳 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#four" aria-expanded="false" aria-controls="four">
+                                個人自傳
+                            </button>
+                        </h2>
+                        <div id="four" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>【關於我】</strong>
+                                <div>
+                                    你好！我叫莊皓程
+                                    <br>
+                                    24歲，台中人，畢業於嶺東科技大學資訊科技系，目前在職訓局受訓（受訓課程：跨平台網頁設計的課程，於112年７月18日結訓）。
+                                    <br>
+                                    興趣：打籃球、健身房、旅遊、看影片、看書、coding。
+                                    <br>
+                                    個性：偏慢熟型，但熟了之後也會很快融入大家!
+                                    目前已役畢。
+                                </div>
+
+
+                                <div class="mt-4">
+                                    <strong>【求學經歷】</strong>
+                                    <br>
+
+                                    高中時期就讀電子科，上單晶片(8051、Visual
+                                    Basic)的程式設計課程時，發現對於程式設計有極大興趣，並在大學時就讀資訊科技系，也因為在學習過程中對網頁設計有興趣。
+
+                                    <br>
+                                    在當兵結束後也找到了職訓局跨平台網頁設計的課程，在職訓課程學到
+                                    程式相關:(HTML、CSS、Javascript、JQuery、PHP、MySQL)，設計相關:(Photoshop、Illustrator)，也有製作一些專題，目前也在加深學習Javascript、JQuery。
+
+                                    <br>
+                                    在大學時期加入系隊籃球隊，三年級時曾當任系隊籃球隊隊長，從一開始不懂得要怎麼帶球隊，到跟學長學弟感情很好，收穫真的很多，也因為曾經當任過隊長，了解到團隊的合作跟大家的溝通配合性。
+
+
+                                </div>
+
+
+                                <div class="mt-4">
+                                    <strong>【工作經歷】</strong>
+                                    <br>
+                                        目前還是個社會新鮮人，但在高中的暑假跟大學空檔時間也都會找工讀來打工。
+                                        在工讀的同時，發現跟同事在工作時溝通與配合的重要性，在我大學第一份打工時，發現大家的做事能力都比我好，讓我也會想跟上大家腳步，第一件事情就是溝通，我也在這時間跟著一起學習如何讓自己進步，在來就是配合，配合大家的步調，讓工作變得更順更快，同時也能增進同事間的感情，這也是為什麼我喜歡在求學過程中的寒、暑假或空檔時間打工。
+                                </div>
+
+
+                                <div class="mt-4">
+                                    <strong>【未來計畫】</strong>
+                                        <br>
+
+                                        <code>
+                                            有些人就有能力做某些事，也有人也是默默地在學習、進步。
+                                        </code>
+
+                                        <br>
+
+                                        雖然自己能力沒有到很高，所以會想在平常空閒時間來去多參加課程或閱讀書籍來獲取更多的資訊跟學習方法，來讓自己更進步!
+                                        <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
     </div>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./WOW/dist/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
-     <script>
+    <script>
         function scrollToTop() {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          });
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
     </script>
 </body>

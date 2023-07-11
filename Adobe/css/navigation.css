@@ -12,7 +12,7 @@
         /* Fixed top */
         #navbarToggleExternalContent a{
             text-decoration: none;
-            color: #AAC8A7;
+            color: #F0EB8D;
         }
         .row{
             display: flex;
@@ -31,5 +31,12 @@
         }
         #navbar{
             margin-bottom: 6rem;
+        }
+        #menu:hover{
+            color: #FF6000;
+        }
+
+        #top:hover{
+            color: #F1D4E5;
         }
 
